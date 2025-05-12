@@ -163,6 +163,9 @@ body {
   font-weight: 300;
   transition: transform 0.2s;
 }
+.competencesTechnologies{
+  color: var(--dark-text);
+}
 
 .skill:hover,
 .loisirs:hover {

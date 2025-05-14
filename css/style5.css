@@ -1,0 +1,225 @@
+/* style4.css */
+:root {
+    --primary-color: rgb(171, 48, 48);
+    --secondary-color: #b85a5f;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container-main {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Profile Section */
+.container-profile {
+    flex: 1;
+    max-width: 410px;
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.profile-titles {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.contact-content div {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0;
+}
+
+.contact-content i {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+.skills-content, .loisirs-content, .langues-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill, .loisirs, .langue {
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Parcours Section */
+.container-parcours {
+    flex: 2;
+    padding: 2rem 3rem;
+}
+
+.description-profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.section-title {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 2rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Academic Section */
+.academiques-content > div {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.academique-title {
+    display: block;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.academique-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Experience Section */
+.stage-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.item-title {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.item-attached {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.3rem 0;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Competences Technologies */
+.competencesTechnologies-category {
+    margin-bottom: 1.5rem;
+}
+
+.competencesTechnologies-category-title {
+    display: block;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.competencesTechnologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.competencesTechnologies {
+    background: #f0f4f8;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+        margin: 1rem;
+    }
+    
+    .container-profile {
+        max-width: 100%;
+    }
+    
+    .container-parcours {
+        padding: 2rem;
+    }
+}
+
+@media print {
+    body {
+        font-size: 12px;
+    }
+    
+    .container-main {
+        box-shadow: none;
+        margin: 0;
+    }
+    
+    .container-profile {
+        background: white;
+        color: var(--text-color);
+    }
+}

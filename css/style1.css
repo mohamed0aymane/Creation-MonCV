@@ -1,6 +1,4 @@
-/* =============================
-   ROOT VARIABLES
-============================= */
+/* ============================= ROOT VARIABLES ============================= */
 :root {
   --primary-color: #2A5C82;
   --secondary-color: #3A9AD9;
@@ -10,9 +8,7 @@
   --background-light: #F8F9FA;
 }
 
-/* =============================
-   BASE
-============================= */
+/* =============================BASE============================= */
 body {
   margin: 0;
   padding: 0;
@@ -21,9 +17,7 @@ body {
   color: var(--dark-text);
 }
 
-/* =============================
-   CONTAINERS
-============================= */
+/* =============================CONTAINERS============================= */
 .container-main {
   display: flex;
   max-width: 1200px;
@@ -46,9 +40,7 @@ body {
   padding: 50px 40px;
 }
 
-/* =============================
-   PROFILE IMAGE
-============================= */
+/* =============================PROFILE IMAGE============================= */
 .profile-image img.picture {
   width: 160px;
   height: 160px;
@@ -59,9 +51,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* =============================
-   PROFILE DESCRIPTION
-============================= */
+/* =============================PROFILE DESCRIPTION============================= */
 .description-profile {
   display: flex;
   flex-direction: column;
@@ -85,9 +75,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* =============================
-   TITRES DE SECTIONS
-============================= */
+/* =============================TITRES DE SECTIONS============================= */
 .section-title, .profile-titles {
   font-size: 25px;
   font-weight: 800;
@@ -126,9 +114,7 @@ body {
   background-color: white;
 }
 
-/* =============================
-   CONTACT
-============================= */
+/* =============================CONTACT============================= */
 .contact-content div {
   margin-bottom: 15px;
 }
@@ -139,9 +125,7 @@ body {
   font-weight: 300;
 }
 
-/* =============================
-   SKILLS & TAGS
-============================= */
+/* =============================SKILLS & TAGS============================= */
 .skills-content,
 .loisirs-content,
 .langues-content,
@@ -182,9 +166,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* =============================
-   EXPERIENCES & FORMATIONS
-============================= */
+/* =============================EXPERIENCES & FORMATIONS============================= */
 .item-title,
 .academique-title {
   font-size: 17px;
@@ -242,9 +224,7 @@ body {
   text-align: right;
 }
 
-/* =============================
-   TIMELINE & POINT MARKERS
-============================= */
+/* =============================STAGE & PROJET & EXEPERIENCE ITEMS============================= */
 .stage-item,
 .projet-item,
 .professionnelle-item {
@@ -253,9 +233,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* =============================
-   TECHNOLOGIES
-============================= */
+/* =============================TECHNOLOGIES============================= */
 .competencesTechnologies-category-title {
   font-size: 15px;
   font-weight: 600;
@@ -269,9 +247,6 @@ body {
   gap: 20px;
 }
 
-/* =============================
-   RESPONSIVE DESIGN
-============================= */
 @media (max-width: 768px) {
   .container-main {
     flex-direction: column;
